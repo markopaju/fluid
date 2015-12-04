@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if IE 9]><html class="ie9"><![endif]-->
+<!--[if !IE]><!--><html><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>fluid</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1">
+<link href="css/global.css" rel="stylesheet" type="text/css">
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css">
+
+<script src="js/libs/modernizr.custom.js"></script>
+<script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/jquery-ui.min.js"></script>
+
+<script src="js/core.js"></script>
+<script src="js/widget/tabs.js"></script>
+<script src="js/widget/accordion.js"></script>
+<script src="js/widget/carousel.js"></script>
+</head>
+<body>
+<div class="page">
+    <header>
+        <a href="#" class="logo" title="OYE universal"><strong>OYE</strong> universal</a>
+        
+        <a href="#header-nav" data-class="nav-open" class="nav-handle object-handle">&#9776;</a>
+        <a href="#header-search" data-class="search-open" class="search-handle object-handle">Search</a>
+        
+        <div class="search" id="header-search">
+            <form>
+                <p>
+                    <input type="text" name="" id="search-input" placeholder="Search" title="Search">
+                    <button>Search</button>
+                </p>
+            </form>
+        </div>
+        
+        <nav>
+            <ul id="header-nav">
+                <li>
+                	<a href="#">item 1</a>
+                    
+                    <div class="nav-child">
+                        <ul>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="active"><a href="#">item 2</a></li>
+                <li>
+                	<a href="#">item 3</a>
+                    
+                    <div class="nav-child">
+                        <ul>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                	<a href="#">item 4</a>
+                    
+                    <div class="nav-child">
+                        <ul>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                            <li><a href="#">item</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">item 5</a></li>
+                <li><a href="#">item 6</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+    <div id="wrapper">
+    	<div id="leftbar">
+        	leftbar
+            
+        	<nav>
+                <ul>
+                    <li><a href="#">item</a></li>
+                    <li><a href="#">item</a></li>
+                    <li><a href="#">item</a></li>
+                    <li><a href="#">item</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div id="rightbar">
+        	rightbar
+        </div>
+        
+        <div id="content">
+        	<div class="grid">
+                <div class="col size-1-16">1/16</div>
+                <div class="col size-1-16">1/16</div>
+                <div class="col size-2-16">2/16</div>
+                <div class="col size-3-16">3/16</div>
+                <div class="col size-4-16">4/16</div>
+                <div class="col size-2-16">2/16</div>
+                <div class="col size-1-16">1/16</div>
+                <div class="col size-2-16">2/16</div>
+                <div class="col size-2-16">2/16</div>
+                <div class="col size-3-16">3/16</div>
+                <div class="col size-4-16">4/16</div>
+                <div class="col size-2-16">2/16</div>
+                <div class="col size-1-16">1/16</div>
+            </div>
+            
+        	<h1>H1. Heading 1 http://css-tricks.com/examples/ShapesOfCSS/</h1>
+            <h2>H2. Heading 2</h2>
+            <h3>H3. Heading 3</h3>
+            <h4>H4. Heading 4</h4>
+            <h5>H5. Heading 5</h5>
+            <h6>H6. Heading 6</h6>
+            
+            <p>Lorem ipsum dolo matara Lorem<sub>Sub</sub> ipsum dolo matara Lorem ipsum<sup>Sub</sup> dolo matara Lorem ipsum dolo matara Lorem ipsum dolo matara</p>
+            
+            <ul class="inline">
+                <li><a href="#" class="tooltip top">Tooltip on top<span class="tooltip"><span class="inner">Tooltip on top Tooltip on top Tooltip on top</span><span class="arrow"></span></span></a></li>
+                <li><a href="#" class="tooltip right">Tooltip on right<span class="tooltip"><span class="inner">Tooltip on right Tooltip on top Tooltip on top</span><span class="arrow"></span></span></a></li>
+                <li><a href="#" class="tooltip bottom">Tooltip on bottom<span class="tooltip"><span class="inner">Tooltip on bottom Tooltip on top Tooltip on top</span><span class="arrow"></span></span></a></li>
+                <li><a href="#" class="tooltip left">Tooltip on left<span class="tooltip"><span class="inner">Tooltip on left Tooltip on top Tooltip on top</span><span class="arrow"></span></span></a></li>
+            </ul>
+            
+            <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                    <ul>
+                        <li>Phasellus iaculis neque</li>
+                        <li>Purus sodales ultricies</li>
+                        <li>Vestibulum laoreet porttitor sem</li>
+                        <li>Ac tristique libero volutpat at</li>
+                    </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+            </ul>
+            
+            <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+            </ol>
+            
+            <ul class="inline">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+            </ul>
+            
+            <dl>
+                <dt>Description lists</dt>
+                <dd>A description list is perfect for defining terms.</dd>
+                <dt>Euismod</dt>
+                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                <dt>Malesuada porta</dt>
+                <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+            </dl>
+            
+            <dl class="inline">
+                <dt>Description lists</dt>
+                <dd>A description list is perfect for defining terms.</dd>
+                <dt>Euismod</dt>
+                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                <dt>Malesuada porta</dt>
+                <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                <dt>Felis euismod semper eget lacinia</dt>
+                <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+            </dl>
+            
+            
+            <table class="striped">
+            	<caption>This is a Table</caption>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table class="hover bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@TwBootstrap</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            
+            <div class="grid">
+                <div class="col size-1-16">1/16</div>
+            </div>
+            
+            <div class="grid">
+                <div class="col size-2-16">2/16</div>
+            </div>
+            
+            <div class="grid">
+                <div class="col size-3-16">3/16</div>
+            </div>
+            
+            <div class="grid">
+                <div class="col size-4-16">4/16</div>
+            </div>
+            
+            <div class="grid">
+                <div class="col size-5-16">5/16</div>
+            </div>
+            
+            <div class="grid">
+                <div class="col size-6-16">6/16</div>
+            </div>
+            
+            <div class="grid">
+                <div class="col size-7-16">7/16</div>
+            </div>
+            
+            <div class="grid">
+                <div class="col size-8-16">8/16</div>
+            </div>
+            
+            <div class="grid">
+                <div class="col size-9-16">9/16</div>
+            </div>
+            
+            <div class="grid">
+                <div class="col size-10-16">10/16</div>
+            </div>
+            
+            <div class="grid">
+                <div class="col size-11-16">11/16</div>
+            </div>
+            
+            <div class="grid">
+                <div class="col size-12-16">12/16</div>
+            </div>
+            
+            <div class="grid">
+                <div class="col size-13-16">13/16</div>
+            </div>
+            
+            <div class="grid">
+                <div class="col size-14-16">14/16</div>
+            </div>
+            
+            <div class="grid">
+                <div class="col size-15-16">15/16</div>
+            </div>
+            
+            <div class="grid">
+                <div class="col">16/16</div>
+            </div>
+            
+            
+            <div class="carousel" data-itemsperpage="2" data-animationspeed="1000" data-autoslide="5000" data-playpause="true">
+                <ul class="list">
+                    <li class="slide" style="background:#d1e7f3;">
+                        Slide 1
+                    </li>
+                    <li class="slide" style="background:#a4d0e7;">
+                        Slide 2
+                    </li>
+                    <li class="slide" style="background:#d1e7f3;">
+                        Slide 3
+                    </li>
+                    <li class="slide" style="background:#a4d0e7;">
+                        Slide 4
+                    </li>
+                    <li class="slide" style="background:#d1e7f3;">
+                        Slide 5
+                    </li>
+                    <li class="slide" style="background:#a4d0e7;">
+                        Slide 6
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <div class="tabs">
+                <ul class="list">
+                    <li><a href="#tab-1">Item 1</a></li>
+                    <li><a href="#tab-2">Item 2</a></li>
+                    <li><a href="#tab-3">Item 3</a></li>
+                </ul>
+                
+                <div class="wrapper">
+                    <div class="content" id="tab-1">
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    </div>
+                    <div class="content" id="tab-2">
+                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                    </div>
+                    <div class="content" id="tab-3">
+                        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="accordion">
+            	<ul>
+                	<li>
+                    	<div class="handle"><a href="#accordion-1">Item 1</a></div>
+                    	<div class="content" id="accordion-1">
+                            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="handle"><a href="#accordion-2">Item 2</a></div>
+                    	<div class="content" id="accordion-2">
+                            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="handle"><a href="#accordion-3">Item 3</a></div>
+                    	<div class="content" id="accordion-3">
+                            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            
+        	<form action="?" method="post">
+                <div class="fields">
+                    <p class="block">
+                        <label for="date">Date input</label> 
+                        <span class="field"><span class="spacing"><input type="date" name="" id="date" required></span></span>
+                    </p>
+                </div>
+                
+                <div class="fields">
+                    <p class="inline size-1-4">
+                        <label for="email">Email</label> 
+                        <span class="field"><span class="spacing"><input type="email" name="" id="email" required></span></span>
+                    </p>
+                    
+                    <p class="block size-1-4">
+                        <label for="number">Number</label> 
+                        <span class="field"><span class="spacing"><input type="number" name="" id="number" min="100" max="500" value="300" step="50" required></span></span>
+                    </p>
+                    
+                    <p class="inline size-1-4">
+                        <label for="password">Pass</label> 
+                        <span class="field"><span class="spacing"><input type="password" name="" id="password"></span></span>
+                    </p>
+                    
+                    <p class="block size-1-4">
+                        <label for="range">Range</label> 
+                        <span class="field"><span class="spacing"><input type="range" name="" id="range" min="100" max="500" value="300" step="50"></span></span>
+                    </p>
+                </div>
+                
+                <div class="fields">
+                    <p class="inline size-2-4">
+                        <label for="search">Search</label> 
+                        <span class="field"><span class="spacing"><input type="search" name="" id="search"></span></span>
+                    </p>
+                    
+                    <p class="block size-2-4">
+                        <label for="text">Text</label> 
+                        <span class="field"><span class="spacing"><input type="text" name="" id="text"></span></span>
+                    </p>
+                </div>
+                
+                <div class="fields">
+                    <p class="inline size-3-4">
+                        <label for="time">Time</label> 
+                        <span class="field"><span class="spacing"><input type="time" name="" id="time" required></span></span>
+                    </p>
+                    
+                    <p class="block size-3-4 input-first">
+                        <label for="url">Url</label> 
+                        <span class="field"><span class="spacing"><input type="url" name="" id="url" required></span></span>
+                    </p>
+                </div>
+                
+                <div class="fields">
+                    <p class="inline">
+                        <label for="select01">Textarea</label>
+                        <span class="field"><span class="spacing"><textarea name="" id="select01" rows="5" cols="20" required></textarea></span></span>
+                    </p>
+                    
+                    <p class="block input-first">
+                        <label for="select02">Textarea</label>
+                        <span class="field"><span class="spacing"><textarea name="" id="select02" rows="5" cols="20"></textarea></span></span>
+                    </p>
+                </div>
+                
+                <div class="fields">
+                    <p class="inline">
+                        <label for="select03">Select field</label>
+                        <span class="field"><select name="" id="select03" required>
+                        	<option value="">Please select</option>
+                            <option value="1">Ottawa</option>
+                            <option value="2">Calgary</option>
+                            <option value="3">Moosejaw</option>
+                        </select></span>
+                    </p>
+                    
+                    <p class="block input-first">
+                        <label for="select04">Select field</label>
+                        <span class="field"><select name="" id="select04">
+                            <option value="1">Ottawa</option>
+                            <option value="2">Calgary</option>
+                            <option value="3">Moosejaw</option>
+                        </select></span>
+                    </p>
+                </div>
+                
+                <div class="fields">
+                    <p class="radios block">
+                        <label>Radio buttons</label>
+                        <input type="radio" name="radios" id="radio1" value="1" required> <label for="radio1">Radio one</label> 
+                        <input type="radio" name="radios" id="radio2" value="2"> <label for="radio2">Radio two</label> 
+                        <input type="radio" name="radios" id="radio3" value="3"> <label for="radio3">Radio three</label> 
+                    </p>
+                </div>
+                
+                <div class="fields">
+                    <p class="radios">
+                        <label>Checkboxes</label>
+                        <input type="checkbox" name="checkboxes" id="checkbox1" required> <label for="checkbox1">Check one</label> 
+                        <input type="checkbox" name="checkboxes" id="checkbox2"> <label for="checkbox2">Check two</label> 
+                        <input type="checkbox" name="checkboxes" id="checkbox3"> <label for="checkbox3">Check three</label>
+                    </p>
+                </div>
+                
+                <ul class="actions">
+                    <li><input type="submit" value="Submit"></li>
+                    <li><input type="reset" value="Reset" class="blue"></li>
+                    <li><button type="submit" class="large orange">Large</button></li>
+                    <li><input type="reset" value="Small" class="small"></li>
+                </ul>
+                
+                <button class="block">Block</button>
+            </form>
+        </div>
+    </div>
+    
+	<footer>Footer</footer>
+</div>
+</body>
+</html>
