@@ -1,2 +1,2 @@
 # fluid
-Little Front End Framework
+Fluid - Front End Framework
